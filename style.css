@@ -1,0 +1,49 @@
+.card{
+    line-height: 2em;
+  }
+  
+  .hide {
+    display: none;
+  }
+  body{
+    font-family: 'Poppins';
+  }
+  
+  li:hover{
+    background-color:#fbfbfd;
+  }
+  
+  li:active{
+    background-color: #fbfbfd;
+  }
+  
+  .navbar {
+    background-color: #fbfbfd;
+    height: 60px;
+  }
+  
+  .s-button{
+    right: 100%;
+  }
+  
+  .bg-blob{
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    border : 1px #fbfbfd solid;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  /* on small screens we want search history not to display EVER */
+  @media only screen and (max-width: 767px){
+    #history-card {
+      display: none!important;
+    }
+  }
+  
+  /* we want search-div to be max vh except on mobile */
+  @media only screen and (min-width: 768px){
+    #search-div {
+      min-height: 100vh;
+    }
+  }
